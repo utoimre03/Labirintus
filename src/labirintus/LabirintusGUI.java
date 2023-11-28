@@ -54,8 +54,8 @@ public class LabirintusGUI extends javax.swing.JFrame {
         pnlOldalSzam = new javax.swing.JPanel();
         lblTxtOldalSz = new javax.swing.JLabel();
         lblOldalSzam = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnOldal1 = new javax.swing.JButton();
+        btnOldal2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         pnlPlayerInfo1 = new javax.swing.JPanel();
         lblKepSziv1 = new javax.swing.JLabel();
@@ -84,6 +84,11 @@ public class LabirintusGUI extends javax.swing.JFrame {
         btnToStart.setForeground(new java.awt.Color(255, 0, 0));
         btnToStart.setText("Kezdés");
         btnToStart.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        btnToStart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToStartActionPerformed(evt);
+            }
+        });
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -271,17 +276,27 @@ public class LabirintusGUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12))
         );
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 0, 0));
-        jButton1.setText("oldal1");
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnOldal1.setBackground(new java.awt.Color(0, 0, 0));
+        btnOldal1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnOldal1.setForeground(new java.awt.Color(255, 0, 0));
+        btnOldal1.setText("oldal1");
+        btnOldal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnOldal1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOldal1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 0, 0));
-        jButton2.setText("oldal2");
-        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnOldal2.setBackground(new java.awt.Color(0, 0, 0));
+        btnOldal2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnOldal2.setForeground(new java.awt.Color(255, 0, 0));
+        btnOldal2.setText("oldal2");
+        btnOldal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        btnOldal2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOldal2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlGameHudLayout = new javax.swing.GroupLayout(pnlGameHud);
         pnlGameHud.setLayout(pnlGameHudLayout);
@@ -298,9 +313,9 @@ public class LabirintusGUI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGameHudLayout.createSequentialGroup()
                 .addContainerGap(205, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnOldal1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(130, 130, 130)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnOldal2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(203, 203, 203))
         );
         pnlGameHudLayout.setVerticalGroup(
@@ -312,8 +327,8 @@ public class LabirintusGUI extends javax.swing.JFrame {
                     .addComponent(pnlOldalSzam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(pnlGameHudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnOldal1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnOldal2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 260, Short.MAX_VALUE)
                 .addComponent(btnToInventory, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -445,6 +460,18 @@ public class LabirintusGUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnOldal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOldal1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnOldal1ActionPerformed
+
+    private void btnOldal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOldal2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnOldal2ActionPerformed
+
+    private void btnToStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToStartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnToStartActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -481,10 +508,10 @@ public class LabirintusGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnOldal1;
+    private javax.swing.JButton btnOldal2;
     private javax.swing.JButton btnToInventory;
     private javax.swing.JButton btnToStart;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
