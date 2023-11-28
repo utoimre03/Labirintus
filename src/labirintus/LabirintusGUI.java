@@ -4,6 +4,9 @@
  */
 package labirintus;
 
+import java.awt.Color;
+import javax.swing.JFrame;
+
 /**
  *
  * @author ÜtőImre(SZOFT_2023_2
@@ -15,6 +18,7 @@ public class LabirintusGUI extends javax.swing.JFrame {
      */
     public LabirintusGUI() {
         initComponents();
+        getContentPane().setBackground(Color.DARK_GRAY);
     }
 
     /**
@@ -26,20 +30,419 @@ public class LabirintusGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        tpOldalak = new javax.swing.JTabbedPane();
+        pnlMenu = new javax.swing.JPanel();
+        btnToStart = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txaOldalnfo1 = new javax.swing.JTextArea();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        pnlGame = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txaOldalnfo = new javax.swing.JTextArea();
+        pnlGameHud = new javax.swing.JPanel();
+        btnToInventory = new javax.swing.JButton();
+        pnlPlayerInfo = new javax.swing.JPanel();
+        lblKepSziv = new javax.swing.JLabel();
+        lblKepCoin = new javax.swing.JLabel();
+        lblKepAtk = new javax.swing.JLabel();
+        lblKepDef = new javax.swing.JLabel();
+        lblHp = new javax.swing.JLabel();
+        lblPenz = new javax.swing.JLabel();
+        lblAtk = new javax.swing.JLabel();
+        lblDef = new javax.swing.JLabel();
+        pnlOldalSzam = new javax.swing.JPanel();
+        lblTxtOldalSz = new javax.swing.JLabel();
+        lblOldalSzam = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        pnlPlayerInfo1 = new javax.swing.JPanel();
+        lblKepSziv1 = new javax.swing.JLabel();
+        lblKepCoin1 = new javax.swing.JLabel();
+        lblKepAtk1 = new javax.swing.JLabel();
+        lblKepDef1 = new javax.swing.JLabel();
+        lblHp1 = new javax.swing.JLabel();
+        lblPenz1 = new javax.swing.JLabel();
+        lblAtk1 = new javax.swing.JLabel();
+        lblDef1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Halál labirintus");
+        setPreferredSize(new java.awt.Dimension(800, 700));
+        setResizable(false);
+        setSize(new java.awt.Dimension(600, 600));
+
+        tpOldalak.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
+        tpOldalak.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        pnlMenu.setBackground(new java.awt.Color(51, 51, 51));
+        pnlMenu.setPreferredSize(new java.awt.Dimension(800, 616));
+
+        btnToStart.setBackground(new java.awt.Color(0, 0, 0));
+        btnToStart.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        btnToStart.setForeground(new java.awt.Color(255, 0, 0));
+        btnToStart.setText("Kezdés");
+        btnToStart.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        txaOldalnfo1.setEditable(false);
+        txaOldalnfo1.setBackground(new java.awt.Color(0, 0, 0));
+        txaOldalnfo1.setColumns(20);
+        txaOldalnfo1.setFont(new java.awt.Font("Verdana", 1, 20)); // NOI18N
+        txaOldalnfo1.setForeground(new java.awt.Color(255, 5, 0));
+        txaOldalnfo1.setLineWrap(true);
+        txaOldalnfo1.setRows(5);
+        txaOldalnfo1.setText("Egy versenyre nevezel, aminek a lényege, hogy át kell kelni a halállabirintuson. A labirintusban tárgyakat találhatsz és szörnyekkel kell harcoljál.");
+        txaOldalnfo1.setToolTipText("");
+        txaOldalnfo1.setWrapStyleWord(true);
+        jScrollPane2.setViewportView(txaOldalnfo1);
+
+        jTextField1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setText("Felhasználónév");
+
+        javax.swing.GroupLayout pnlMenuLayout = new javax.swing.GroupLayout(pnlMenu);
+        pnlMenu.setLayout(pnlMenuLayout);
+        pnlMenuLayout.setHorizontalGroup(
+            pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlMenuLayout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addGroup(pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlMenuLayout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlMenuLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(324, 324, 324))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlMenuLayout.createSequentialGroup()
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(287, 287, 287))))
+            .addGroup(pnlMenuLayout.createSequentialGroup()
+                .addGap(312, 312, 312)
+                .addComponent(btnToStart, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        pnlMenuLayout.setVerticalGroup(
+            pnlMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(149, 149, 149)
+                .addComponent(btnToStart, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(245, Short.MAX_VALUE))
+        );
+
+        tpOldalak.addTab("Menü", pnlMenu);
+
+        pnlGame.setBackground(new java.awt.Color(51, 51, 51));
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        txaOldalnfo.setBackground(new java.awt.Color(0, 0, 0));
+        txaOldalnfo.setColumns(20);
+        txaOldalnfo.setFont(new java.awt.Font("Tahoma", 1, 23)); // NOI18N
+        txaOldalnfo.setForeground(new java.awt.Color(255, 5, 0));
+        txaOldalnfo.setLineWrap(true);
+        txaOldalnfo.setRows(5);
+        txaOldalnfo.setText("Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz, amely a bal oldali fal mellett áll. Hat doboz van rajta, egyikükre a te neved festették. Ha ki akarod nyitni a dobozt, lapozz a 270-re. Ha inkább tovább haladsz észak felé, lapozz a 66-ra.");
+        txaOldalnfo.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txaOldalnfo);
+
+        pnlGameHud.setBackground(new java.awt.Color(153, 153, 153));
+
+        btnToInventory.setBackground(new java.awt.Color(102, 102, 102));
+        btnToInventory.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnToInventory.setForeground(new java.awt.Color(255, 0, 0));
+        btnToInventory.setText("Inventory");
+        btnToInventory.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+
+        pnlPlayerInfo.setBackground(new java.awt.Color(204, 204, 204));
+        pnlPlayerInfo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        lblKepSziv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/sziv.png"))); // NOI18N
+
+        lblKepCoin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/coin.png"))); // NOI18N
+
+        lblKepAtk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/boko.png"))); // NOI18N
+
+        lblKepDef.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/shield.png"))); // NOI18N
+
+        lblHp.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblHp.setText("100");
+
+        lblPenz.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblPenz.setText("0");
+
+        lblAtk.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblAtk.setText("5");
+
+        lblDef.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblDef.setText("0");
+
+        javax.swing.GroupLayout pnlPlayerInfoLayout = new javax.swing.GroupLayout(pnlPlayerInfo);
+        pnlPlayerInfo.setLayout(pnlPlayerInfoLayout);
+        pnlPlayerInfoLayout.setHorizontalGroup(
+            pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPlayerInfoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPlayerInfoLayout.createSequentialGroup()
+                        .addComponent(lblKepSziv)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblHp, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlPlayerInfoLayout.createSequentialGroup()
+                        .addComponent(lblKepCoin)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblPenz, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlPlayerInfoLayout.createSequentialGroup()
+                        .addComponent(lblKepAtk)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblAtk, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlPlayerInfoLayout.createSequentialGroup()
+                        .addComponent(lblKepDef)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblDef, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        pnlPlayerInfoLayout.setVerticalGroup(
+            pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPlayerInfoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblKepSziv)
+                    .addComponent(lblHp))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblKepCoin)
+                    .addComponent(lblPenz))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblKepAtk)
+                    .addComponent(lblAtk))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlPlayerInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblKepDef)
+                    .addComponent(lblDef))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnlOldalSzam.setBackground(new java.awt.Color(153, 153, 153));
+        pnlOldalSzam.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+
+        lblTxtOldalSz.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblTxtOldalSz.setText("Oldalszám");
+
+        lblOldalSzam.setFont(new java.awt.Font("MS UI Gothic", 1, 48)); // NOI18N
+        lblOldalSzam.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblOldalSzam.setText("1");
+
+        javax.swing.GroupLayout pnlOldalSzamLayout = new javax.swing.GroupLayout(pnlOldalSzam);
+        pnlOldalSzam.setLayout(pnlOldalSzamLayout);
+        pnlOldalSzamLayout.setHorizontalGroup(
+            pnlOldalSzamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOldalSzamLayout.createSequentialGroup()
+                .addContainerGap(31, Short.MAX_VALUE)
+                .addGroup(pnlOldalSzamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlOldalSzamLayout.createSequentialGroup()
+                        .addComponent(lblTxtOldalSz, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlOldalSzamLayout.createSequentialGroup()
+                        .addComponent(lblOldalSzam, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))))
+        );
+        pnlOldalSzamLayout.setVerticalGroup(
+            pnlOldalSzamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOldalSzamLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblTxtOldalSz)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblOldalSzam, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12))
+        );
+
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 0, 0));
+        jButton1.setText("oldal1");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 0, 0));
+        jButton2.setText("oldal2");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        javax.swing.GroupLayout pnlGameHudLayout = new javax.swing.GroupLayout(pnlGameHud);
+        pnlGameHud.setLayout(pnlGameHudLayout);
+        pnlGameHudLayout.setHorizontalGroup(
+            pnlGameHudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGameHudLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnToInventory, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(pnlGameHudLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlPlayerInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(142, 142, 142)
+                .addComponent(pnlOldalSzam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGameHudLayout.createSequentialGroup()
+                .addContainerGap(205, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(130, 130, 130)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(203, 203, 203))
+        );
+        pnlGameHudLayout.setVerticalGroup(
+            pnlGameHudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlGameHudLayout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addGroup(pnlGameHudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlPlayerInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlOldalSzam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(pnlGameHudLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 260, Short.MAX_VALUE)
+                .addComponent(btnToInventory, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout pnlGameLayout = new javax.swing.GroupLayout(pnlGame);
+        pnlGame.setLayout(pnlGameLayout);
+        pnlGameLayout.setHorizontalGroup(
+            pnlGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlGameLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(pnlGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(pnlGameHud, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
+        );
+        pnlGameLayout.setVerticalGroup(
+            pnlGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGameLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(pnlGameHud, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        tpOldalak.addTab("Game", pnlGame);
+
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+
+        pnlPlayerInfo1.setBackground(new java.awt.Color(204, 204, 204));
+        pnlPlayerInfo1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        lblKepSziv1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/sziv.png"))); // NOI18N
+
+        lblKepCoin1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/coin.png"))); // NOI18N
+
+        lblKepAtk1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/boko.png"))); // NOI18N
+
+        lblKepDef1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/labirintus/shield.png"))); // NOI18N
+
+        lblHp1.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblHp1.setText("100");
+
+        lblPenz1.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblPenz1.setText("0");
+
+        lblAtk1.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblAtk1.setText("5");
+
+        lblDef1.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        lblDef1.setText("0");
+
+        javax.swing.GroupLayout pnlPlayerInfo1Layout = new javax.swing.GroupLayout(pnlPlayerInfo1);
+        pnlPlayerInfo1.setLayout(pnlPlayerInfo1Layout);
+        pnlPlayerInfo1Layout.setHorizontalGroup(
+            pnlPlayerInfo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPlayerInfo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblKepSziv1)
+                .addGap(18, 18, 18)
+                .addComponent(lblHp1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblKepCoin1)
+                .addGap(18, 18, 18)
+                .addComponent(lblPenz1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(lblKepAtk1)
+                .addGap(18, 18, 18)
+                .addComponent(lblAtk1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lblKepDef1)
+                .addGap(18, 18, 18)
+                .addComponent(lblDef1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(247, Short.MAX_VALUE))
+        );
+        pnlPlayerInfo1Layout.setVerticalGroup(
+            pnlPlayerInfo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPlayerInfo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlPlayerInfo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblDef1)
+                    .addComponent(lblKepSziv1)
+                    .addComponent(lblHp1)
+                    .addComponent(lblPenz1)
+                    .addComponent(lblKepCoin1)
+                    .addComponent(lblKepAtk1)
+                    .addComponent(lblAtk1)
+                    .addComponent(lblKepDef1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlPlayerInfo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlPlayerInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(636, Short.MAX_VALUE))
+        );
+
+        tpOldalak.addTab("Inventory", jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tpOldalak)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tpOldalak)
+                .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -78,5 +481,41 @@ public class LabirintusGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnToInventory;
+    private javax.swing.JButton btnToStart;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblAtk;
+    private javax.swing.JLabel lblAtk1;
+    private javax.swing.JLabel lblDef;
+    private javax.swing.JLabel lblDef1;
+    private javax.swing.JLabel lblHp;
+    private javax.swing.JLabel lblHp1;
+    private javax.swing.JLabel lblKepAtk;
+    private javax.swing.JLabel lblKepAtk1;
+    private javax.swing.JLabel lblKepCoin;
+    private javax.swing.JLabel lblKepCoin1;
+    private javax.swing.JLabel lblKepDef;
+    private javax.swing.JLabel lblKepDef1;
+    private javax.swing.JLabel lblKepSziv;
+    private javax.swing.JLabel lblKepSziv1;
+    private javax.swing.JLabel lblOldalSzam;
+    private javax.swing.JLabel lblPenz;
+    private javax.swing.JLabel lblPenz1;
+    private javax.swing.JLabel lblTxtOldalSz;
+    private javax.swing.JPanel pnlGame;
+    private javax.swing.JPanel pnlGameHud;
+    private javax.swing.JPanel pnlMenu;
+    private javax.swing.JPanel pnlOldalSzam;
+    private javax.swing.JPanel pnlPlayerInfo;
+    private javax.swing.JPanel pnlPlayerInfo1;
+    private javax.swing.JTabbedPane tpOldalak;
+    private javax.swing.JTextArea txaOldalnfo;
+    private javax.swing.JTextArea txaOldalnfo1;
     // End of variables declaration//GEN-END:variables
 }
